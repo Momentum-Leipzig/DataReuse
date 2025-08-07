@@ -1,0 +1,17 @@
+name: "Paper-Prototype App"
+output_dir: "docs"
+navbar:
+  title: "Paper-Prototype App"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Description"
+      href: description.html
+    - text: "Documentation"
+      menu:
+        - text: "Constructs"
+          href: constructs.html
+        - text: "Timepoints"
+          href: timepoints.html
+        - text: "Studies"
+          href: studies.html

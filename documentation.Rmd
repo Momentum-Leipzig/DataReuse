@@ -1,0 +1,6 @@
+---
+title: "Documentation"
+output: html_document
+---
+
+This is the documentation page.
