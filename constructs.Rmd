@@ -25,7 +25,8 @@ color: lightblue;
 
 
 
-
+# Example Views {.tabset .tabset-fade}  
+## One Construct Only {-}  
 
 <div class="row">
 <div class="column">
@@ -57,10 +58,10 @@ placeholder="Search"
 </ul>
 
 
-### Selection
+#### Selection
 
-<div style="border: 2px solid black;">job_aut1</div>  
-### Measured At
+<div style="border: 2px solid black;"> job_aut1</div>  
+#### Measured At
   
 |      |                       |      |      |      |      |
 |------|-----------------------|------|------|------|------|
@@ -88,21 +89,10 @@ Comment: one could select more and more items with "&" or "|" operators, indicat
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="column">
-## Construct: Job Autonomy 
+### Construct: Job Autonomy  
 
-### Original
+#### Original
 
 Intro: Please think about the last 3 Months/4 Weeks  
 Text: My work allowed me to take initiative  
@@ -115,7 +105,7 @@ Scale:
 
 Citation: Morgeson, F. P., & Humphrey, S. E. (2006). The Work Design Questionnaire (WDQ): Developing and validating a comprehensive measure for assessing job design and the nature of work. Journal of Applied Psychology, 91(6), 1321 -1339. https://doi.org/10.1037/00219010.91.6.1321
 
-### Translated
+#### Translated
 
 Intro: Bitte denken Sie bei der Beantwortung der folgenden Fragen an die letzten 3 Monate/ 4 Wochen.  
 Text: Meine Arbeit ermöglichte es mir, Initiative zu übernehmen.  
@@ -127,7 +117,7 @@ Scale:
 
 Translation: Stegmann, S., van Dick, R., Ullrich, J., Charalambous, J., Menzel, B., Egold, N., & Wu, T. T.-C. (2010). Der Work Design Questionnaire. Zeitschrift Für Arbeits- Und Organisationspsychologie A&O, 54, 1 -28. https://doi.org/10.1026/0932-4089/a000002
 
-### Measured At
+#### Measured At
 
 | MP   | TP    | MP                    | TP    | MP   | TP    | MP   | TP    | MP   | TP    | MP   | TP    |
 |------|-------|-----------------------|-------|------|-------|------|-------|------|-------|------|-------|
@@ -162,71 +152,7 @@ ggplot(data, aes(TPs, N)) +
 
 
 
+</div><!--Second Column -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
+## Two Constructs {-}  
+</div><!--"Row"-->
