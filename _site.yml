@@ -1,7 +1,7 @@
 name: "Paper-Prototype App"
 output_dir: "docs"
 navbar:
-  title: "Paper-Prototype App"
+  title: "Demonstration Data Documentation App"
   left:
     - text: "Home"
       href: index.html
@@ -13,5 +13,3 @@ navbar:
           href: constructs.html
         - text: "Timepoints"
           href: timepoints.html
-        - text: "Studies"
-          href: studies.html

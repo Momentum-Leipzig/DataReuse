@@ -11,7 +11,7 @@
 
 
 
-<title>Constructs</title>
+<title>Timepoints</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -276,22 +276,39 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Constructs</h1>
+<h1 class="title toc-ignore">Timepoints</h1>
 
 </div>
 
 
 <div id="section" class="section level1 tabset tabset-fade">
 <h1 class="tabset tabset-fade"></h1>
-<div id="example-1---job-autonomy" class="section level2 unnumbered">
-<h2 class="unnumbered">Example 1 - Job Autonomy</h2>
+<div id="example-1---one-timepoint" class="section level2 unnumbered">
+<h2 class="unnumbered">Example 1 - One Timepoint</h2>
 <div class="row">
 <div class="column">
 <p><input
 type="text"
 placeholder="Search"
 /></p>
-<ul style="border: 2px solid black">
+<div
+style="border: 2px solid black; padding: 0 20px; margin-bottom: 20px; list-style-position: outside;">
+<li>
+T1 (12/2019)
+</li>
+<li>
+T2 (03/2020)
+</li>
+<li>
+T3 (04/2020)
+</li>
+<li>
+T4 (05/2020)
+</li>
+<li>
+T5 (06/2020)
+</li>
+<ul>
 <li>
 Demographics
 </li>
@@ -301,39 +318,39 @@ Job Attitudes
 <li>
 Ageing and Work
 </li>
-<li>
-Work Design
 <ul>
 <li>
-Job Demands
+Work Ability
 </li>
 <li>
-Job Constraints
+Age Satisfaction
 </li>
-<li>
-Job Support
-</li>
-<li>
-Job Autonomy
 <ul>
 <li style="background:AliceBlue;">
-job_aut1: My work allowed me to take initiative
+age_sat1: Things are getting worse as I get older
 </li>
 <li>
-job_aut2: I could make my own decisions
+age_sat2: As you get older you are less useful
 </li>
 <li>
-job_aut3: My work gave me great decision latitude
+age_sat3: I have as much pep as I had last year
+</li>
+<li>
+age_sat4: As I get older, things are better than I thought they would be
+</li>
+<li>
+age_sat5: I am as happy now as when I was younger
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+</div>
 <div id="selection" class="section level4">
 <h4>Selection</h4>
-<div style="border: 2px solid black; padding-left: 5px;">
-job_aut1
+<div style="border: 2px solid black; padding-left:5px;">
+age_sat1
 </div>
 <div style="height: 20px;">
 
@@ -346,31 +363,10 @@ job_aut1
 <strong>T2</strong><br>
 </div>
 <div>
-<strong>T3</strong><br>
-</div>
-<div>
-<strong>T4</strong><br>
-</div>
-<div>
 <strong>T5</strong><br>
 </div>
 <div>
-<strong>T6</strong><br>
-</div>
-<div>
-<strong>T7</strong><br>
-</div>
-<div>
 <strong>T8</strong><br>
-</div>
-<div>
-<strong>T9</strong><br>
-</div>
-<div>
-<strong>T10</strong><br>
-</div>
-<div>
-<strong>T11</strong><br>
 </div>
 </div>
 <div style="height: 10px;">
@@ -387,19 +383,19 @@ measurement occasions</p>
 <div style="height: 20px;">
 
 </div>
-<p><img src="constructs_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+<p><img src="timepoints_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 <button>Download Data</button></p>
 </div>
 </div>
 <!--First Column -->
 <div class="column">
-<div id="construct-job-autonomy" class="section level3">
-<h3>Construct: Job Autonomy</h3>
+<div id="construct-age-satisfaction" class="section level3">
+<h3>Construct: Age satisfaction</h3>
 <div id="english" class="section level4">
 <h4>English</h4>
-<p><strong>Intro</strong>: Please think about the last 3 Months/4
-Weeks.<br />
-<strong>Text</strong>: My work allowed me to take initiative. <br>
+<p><strong>Intro</strong>: For the last 3 months I have been thinking at
+work that…<br />
+<strong>Text</strong>: things are getting worse as I get older. <br>
 <strong>Scale</strong>:</p>
 <ul>
 <li>1 = strongly disagree</li>
@@ -410,19 +406,15 @@ Weeks.<br />
 <li>6 = agree</li>
 <li>7 = strongly agree</li>
 </ul>
-<p><strong>Citation</strong>: Morgeson, F. P., &amp; Humphrey, S. E.
-(2006). The Work Design Questionnaire (WDQ): Developing and validating a
-comprehensive measure for assessing job design and the nature of work.
-<em>Journal of Applied Psychology, 91</em>(6), 1321–1339. <a
-href="https://doi.org/10.1037/00219010.91.6.1321"
-class="uri">https://doi.org/10.1037/00219010.91.6.1321</a></p>
+<p><strong>Citation</strong>: Lawton, M. P. (1975). The Philadelphia
+Geriatric Center Morale Scale: A revision. <em>Journal of Gerontology,
+30</em>, 85–89.https://doi.org/10.1093/geronj/30.1.85</p>
 </div>
 <div id="german" class="section level4">
 <h4>German</h4>
-<p><strong>Intro</strong>: Bitte denken Sie bei der Beantwortung der
-folgenden Fragen an die letzten 3 Monate/ 4 Wochen. <br>
-<strong>Text</strong>: Meine Arbeit ermöglichte es mir, Initiative zu
-übernehmen. <br> <strong>Scale</strong>:</p>
+<p><strong>Intro</strong>: In den letzten 3 Monaten habe ich bei der
+Arbeit gedacht, dass… <br> <strong>Text</strong>: …die Dinge schlechter
+werden je älter ich werde. <br> <strong>Scale</strong>:</p>
 <ul>
 <li>1 = trifft überhaupt nicht zu</li>
 <li>2 = trifft nicht zu</li>
@@ -432,12 +424,7 @@ folgenden Fragen an die letzten 3 Monate/ 4 Wochen. <br>
 <li>6 = trifft zu</li>
 <li>7 = trifft voll und ganz zu</li>
 </ul>
-<p><strong>Citation</strong>: Stegmann, S., van Dick, R., Ullrich, J.,
-Charalambous, J., Menzel, B., Egold, N., &amp; Wu, T. T.-C. (2010). Der
-Work Design Questionnaire. <em>Zeitschrift Für Arbeits- Und
-Organisationspsychologie A&amp;O, 54</em>, 1–28. <a
-href="https://doi.org/10.1026/0932-4089/a000002"
-class="uri">https://doi.org/10.1026/0932-4089/a000002</a></p>
+<p><strong>Citation</strong>: Self-translated</p>
 </div>
 <div id="measured-at" class="section level4">
 <h4>Measured at</h4>
@@ -448,31 +435,31 @@ T1
 <div class="measured">
 T2
 </div>
-<div class="measured">
+<div>
 T3
 </div>
-<div class="measured">
+<div>
 T4
 </div>
 <div class="measured">
 T5
 </div>
-<div class="measured">
+<div>
 T6
 </div>
-<div class="measured">
+<div>
 T7
 </div>
 <div class="measured">
 T8
 </div>
-<div class="measured">
+<div>
 T9
 </div>
-<div class="measured">
+<div>
 T10
 </div>
-<div class="measured">
+<div>
 T11
 </div>
 <div>
@@ -613,18 +600,21 @@ T54
 </div>
 <!--"Row"-->
 </div>
-<div
-id="example-2---turnover-intentions-and-perceived-organizational-support"
+<div id="example-2---three-timepoints"
 class="section level2 unnumbered">
-<h2 class="unnumbered">Example 2 - Turnover Intentions and Perceived
-Organizational Support</h2>
+<h2 class="unnumbered">Example 2 - Three Timepoints</h2>
 <div class="row">
 <div class="column">
 <p><input
 type="text"
 placeholder="Search"
 /></p>
-<ul style="border: 2px solid black">
+<div
+style="border: 2px solid black; padding: 0 20px; margin-bottom: 20px; list-style-position: outside;">
+<li>
+T1 (12/2019)
+</li>
+<ul>
 <li>
 Demographics
 </li>
@@ -641,58 +631,85 @@ Job Satisfaction
 <li>
 Turnover Intentions
 </li>
+<li>
+Retirement Intentions
+</li>
 <ul>
 <li style="background:AliceBlue;">
-turn1: I was planning to leave my job for another
+retire1: I expected to begin collecting a pension in the near future
 </li>
 <li>
-turn2: I often thought of quitting this job and finding another
+retire2: I was thinking about retiring in the near future
 </li>
 <li>
-turn3: I would have liked to quit my job and find another
+retire3: I was planning to retire in the near future
+</li>
+<li>
+retire4: I was expecting to retire in the near futre
 </li>
 </ul>
 </ul>
+</ul>
 <li>
-Ageing and Work
-</li>
-<li>
-Work Design
-<ul>
-<li>
-Job Demands
-</li>
-<li>
-Job Constraints
-</li>
-<li>
-Job Support
-</li>
-<li>
-Job Autonomy
-</li>
-<li>
-Perceived Organizational Support
+T2 (03/2020)
 </li>
 <ul>
 <li>
-pos1: The organization valued my contribution to its well-being
+Demographics
 </li>
 <li>
-pos2: The organization failed to appreciate any extra effort from me
+Job Attitudes
+</li>
+<ul>
+<li>
+Job Engagement
 </li>
 <li>
-pos3: The organization would have ignored any complaint from me
+Job Satisfaction
 </li>
+<li>
+Turnover Intentions
+</li>
+<li>
+Retirement Intentions
+</li>
+</ul>
+</ul>
+</ul>
+<li>
+T3 (04/2020)
+</li>
+<ul>
+<li>
+Demographics
+</li>
+<li>
+Job Attitudes
+</li>
+<ul>
+<li>
+Job Engagement
+</li>
+<li>
+Job Satisfaction
+</li>
+<li>
+Turnover Intentions
+</li>
+<li>
+Retirement Intentions
+</li>
+<ul>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+</div>
 <div id="selection-1" class="section level4">
 <h4>Selection</h4>
 <div style="border: 2px solid black; padding-left: 5px;">
-turn1 &amp; pos1
+retire1
 </div>
 <div style="height: 20px;">
 
@@ -702,28 +719,13 @@ turn1 &amp; pos1
 <h4>Measurement Points</h4>
 <div style="display: flex; gap: 20px;">
 <div>
+<strong>T1</strong><br>
+</div>
+<div>
+<strong>T2</strong><br>
+</div>
+<div>
 <strong>T3</strong><br>
-</div>
-<div>
-<strong>T4</strong><br>
-</div>
-<div>
-<strong>T6</strong><br>
-</div>
-<div>
-<strong>T7</strong><br>
-</div>
-<div>
-<strong>T8</strong><br>
-</div>
-<div>
-<strong>T9</strong><br>
-</div>
-<div>
-<strong>T10</strong><br>
-</div>
-<div>
-<strong>T11</strong><br>
 </div>
 </div>
 <div style="height: 10px;">
@@ -740,8 +742,10 @@ measurement occasions</p>
 <div style="height: 20px;">
 
 </div>
-<p><img src="constructs_files/figure-html/unnamed-chunk-3-1.png" width="672" />
-<button>Download Data</button></p>
+<p><img src="timepoints_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<button>
+Download Data
+</button>
 </div>
 </div>
 <!--First Column -->
@@ -751,8 +755,8 @@ measurement occasions</p>
 <div id="english-1" class="section level4">
 <h4>English</h4>
 <p><strong>Intro</strong>: In the last 3 months/4 weeks…<br>
-<strong>Text</strong>: …I was planning to leave my job for another. <br>
-<strong>Scale</strong>:</p>
+<strong>Text</strong>: …I expected to begin collecting a pension in the
+near future. <br> <strong>Scale</strong>:</p>
 <ul>
 <li>1 = strongly disagree</li>
 <li>2 = disagree</li>
@@ -771,8 +775,8 @@ class="uri">https://doi.org/10.1111/j.1744-6570.1998.tb00255.x</a></p>
 <div id="german-1" class="section level4">
 <h4>German</h4>
 <p><strong>Intro</strong>: In den letzten 3 Monaten/4 Wochen…<br>
-<strong>Text</strong>: …plante ich, meinen Job für einen anderen zu
-kündigen. <br> <strong>Scale</strong>:</p>
+<strong>Text</strong>: …rechnete ich damit, bald Rente zu erhalten. <br>
+<strong>Scale</strong>:</p>
 <ul>
 <li>1 = trifft überhaupt nicht zu</li>
 <li>2 = trifft nicht zu</li>
@@ -787,37 +791,37 @@ kündigen. <br> <strong>Scale</strong>:</p>
 <div id="measured-at-1" class="section level4">
 <h4>Measured at</h4>
 <div class="flex-container">
-<div>
+<div class="measured">
 T1
 </div>
-<div>
+<div class="measured">
 T2
 </div>
 <div class="measured">
 T3
 </div>
-<div class="measured">
+<div>
 T4
 </div>
 <div>
 T5
 </div>
-<div class="measured">
+<div>
 T6
 </div>
-<div class="measured">
+<div>
 T7
 </div>
-<div class="measured">
+<div>
 T8
 </div>
-<div class="measured">
+<div>
 T9
 </div>
-<div class="measured">
+<div>
 T10
 </div>
-<div class="measured">
+<div>
 T11
 </div>
 <div>
