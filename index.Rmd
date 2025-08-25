@@ -2,12 +2,78 @@
 title: "Home"
 output: html_document
 ---
+<div style="height: 20px;"></div>
 
 ## About the Project
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
+The aim of this project is to make openly available data from the Leipzig Momentum Panel on Worker Characteristics, Experiences, and Behavior. The dataset includes data from a large sample of workers in Germany collected at 54 measurement points over five years – before, during, and after the COVID-19 pandemic. Workers were surveyed on a wide range of topics, including: 
 
+- Experiences during the COVID-19 pandemic 
+- Health and wellbeing 
+- Work characteristics and work behaviors 
+- Personality traits and development 
+- Aging, employment, and lifespan-related outcomes
+    
+To facilitate broad use of the dataset, comprehensive documentation will be prepared. This will include detailed codebooks, variable guides, and clear explanations of the longitudinal design and sampling procedures, ensuring that other researchers can easily understand and work with the data.
+Both the dataset and its documentation will be publicly accessible via the Open Science Framework (OSF; https://osf.io/rabzm/) in 2026.
+In managing and storing the data and metadata, we will adhere to the FAIR (**F**indable - **A**ccessible - **I**nteroperable - **R**euseable) guidelines. 
+Specifically, we will: 
+
+1. **Findable**: Ensure that the datasets are assigned clear and persistent identifiers (e.g., DOIs) and are accompanied by comprehensive metadata to facilitate findability.
+2. **Accessible**: Make the data available to the scientific community and the public through an open-access repository (Open Science Framework, https:/osf.io).
+3. **Interoperable**: Format the data and metadata in standardized and widely accepted formats (e.g., CSV, Excel, and SPSS spreadsheet formats) using UTF-8 encoding to ensure compatibility with various data management and analysis tools. 
+4. **Reuseable**: Provide detailed documentation and metadata to enable other researchers to understand and use the data correctly. This includes descriptions of the data collection methods, variables included in the dataset, and processing steps. To facilitate reuse of the data, we will compute scale scores for the constructs included in the dataset. The data will be available under a Creative Commons Attribution 4.0 International (CC-BY 4.0) license. This allows others to use, distribute, and build upon the data, provided appropriate credit is given. 
+
+<div style="height: 20px;"></div>
 
 ## About us
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
+The project team comprises a diverse group of experts with complementary skills, ensuring the effective management and dissemination of the data. The team members are:
+
+
+**Dr. Maie Stein (Leipzig University)**
+
+Maie Stein shares responsibility with Hannes Zacher for managing the project and supporting data preparation, documentation, and management. Maie has extensive experience working with data, data management, open science, and proficiency in R. 
+
+Responsibilities:
+
+- Co-manage the project with Hannes Zacher.
+- Oversee data preparation and documentation.
+- Manage data storage and ensure compliance with FAIR principles.
+- Prepare manuscript for submission in Scientific Data.
+
+    
+    
+**Prof. Dr. Hannes Zacher (Leipzig University)**
+
+Hannes Zacher has been responsible for conceptualizing and conducting the study. Hannes has extensively worked with the data and has a deep understanding of the study’s design and the content and structure of the dataset. 
+
+Responsibilities:
+
+- Co-manage the project with Maie Stein.
+- Oversee data preparation, documentation, and storage.
+- Prepare manuscript for submission in Scientific Data.
+    
+    
+    
+**Richard Janzen (Leipzig University)**
+
+Richard Janzen has excellent knowledge and skills in data management and analysis as well as open science. Richard is responsible for handling data preparation, documentation, and management. Having used portions of the dataset for his dissertation, Richard Janzen is well-versed with its structure and content, allowing him to manage the data preparation and documentation effectively. 
+
+Responsibilities:
+
+- Manage data preparation and documentation tasks.
+- Ensure the data is well-structured and documented.
+- Support data management and storage solutions.
+
+
+    
+**Prof. Dr. Cort W. Rudolph (Wayne State University)**
+
+Cort W. Rudolph is an industrial and organizational psychologist and professor of psychology at Wayne State University in Detroit, MI (USA). He was involved in the study’s conceptualization and has extensively worked with the data. We plan to invite Prof. Dr. Rudolph for a two-week visit in Germany early in the proposed project. His insights will be highly useful in establishing a detailed data preparation plan. Additionally, his extensive network of collaborators in different fields of research will be important to facilitate invitation of participants for the workshop planned as part of the proposed project.
+
+Responsibilities:
+
+- Advise on data management and methodologies.
+- Assist in performing complex data processing in R.
+- Support the preparation of the data descriptor manuscript.

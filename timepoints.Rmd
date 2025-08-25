@@ -1,12 +1,12 @@
 ---
-title: "Constructs"
+title: "Timepoints"
 output: 
   html_document:
     css: "style.css"
 ---
 
 # {.tabset .tabset-fade}  
-## Example 1 - Job Autonomy {-}  
+## Example 1 - One Timepoint {-}  
 
 <div class="row">
 <div class="column">
@@ -15,20 +15,25 @@ type="text"
 placeholder="Search"
 />
 
-<ul style="border: 2px solid black">
+<div style="border: 2px solid black; padding: 0 20px; margin-bottom: 20px; list-style-position: outside;">
+<li>T1 (12/2019)</li>
+<li>T2 (03/2020)</li>
+<li>T3 (04/2020)</li>
+<li>T4 (05/2020)</li>
+<li>T5 (06/2020)</li>
+<ul>
 <li>Demographics</li>
 <li>Job Attitudes</li>
 <li>Ageing and Work</li>
-<li>Work Design
 <ul>
-<li>Job Demands</li>
-<li>Job Constraints</li>
-<li>Job Support</li>
-<li>Job Autonomy
+<li>Work Ability</li>
+<li>Age Satisfaction</li>
 <ul>
-<li style="background:AliceBlue;">job_aut1: My work allowed me to take initiative</li>
-<li>job_aut2: I could make my own decisions</li>
-<li>job_aut3: My work gave me great decision latitude</li>
+<li style="background:AliceBlue;">age_sat1: Things are getting worse as I get older</li>
+<li>age_sat2: As you get older you are less useful</li>
+<li>age_sat3: I have as much pep as I had last year</li>
+<li>age_sat4: As I get older, things are better than I thought they would be</li>
+<li>age_sat5: I am as happy now as when I was younger</li>
 </ul>
 </li>
 
@@ -36,30 +41,26 @@ placeholder="Search"
 </li>
 
 </ul>
+
+</div>
 
 
 #### Selection
 
-<div style="border: 2px solid black; padding-left: 5px;"> job_aut1</div>  
+<div style="border: 2px solid black; padding-left:5px;">age_sat1</div>  
 <div style="height: 20px;"></div>
 
-#### Measurement Points
+#### Measurement Points 
 
 <div style = "display: flex; gap: 20px;">
 <div><strong>T2</strong><br></div>
-<div><strong>T3</strong><br></div>
-<div><strong>T4</strong><br></div>
 <div><strong>T5</strong><br></div>
-<div><strong>T6</strong><br></div>
-<div><strong>T7</strong><br></div>
 <div><strong>T8</strong><br></div>
-<div><strong>T9</strong><br></div>
-<div><strong>T10</strong><br></div>
-<div><strong>T11</strong><br></div>
 </div>
 
 
 <div style="height: 10px;"></div>
+
 
 **Sample Size**
 
@@ -70,12 +71,11 @@ N = number of participants, n = number of data points across measurement occasio
 </div>
 <div style="height: 20px;"></div>
 
-
 ```{r echo=FALSE}
 library(ggplot2)
 
 set.seed(1234)
-TPs <- c("T2","T3","T4","T5","T6","T7","T8","T9","T10","T11")
+TPs <- c("T2", "T5","T8")
 N = sample(800:1780, length(TPs), replace = TRUE)
 data = data.frame(TPs = factor(TPs, levels = TPs, ordered = TRUE), N)
 
@@ -90,15 +90,14 @@ ggplot(data, aes(TPs, N)) +
 
 
 
-
 <div class="column">
-### Construct: Job Autonomy  
 
+### Construct: Age satisfaction
 
-#### English 
+#### English
 
-**Intro**: Please think about the last 3 Months/4 Weeks.   
-**Text**: My work allowed me to take initiative.  <br>
+**Intro**: For the last 3 months I have been thinking at work that...  
+**Text**: things are getting worse as I get older.  <br>
 **Scale**:  
 
 - 1 = strongly disagree
@@ -107,25 +106,25 @@ ggplot(data, aes(TPs, N)) +
 - 4 = neither agree nor disagree
 - 5 = somewhat agree
 - 6 = agree
-- 7 = strongly agree
+- 7 = strongly agree 
 
-**Citation**: Morgeson, F. P., & Humphrey, S. E. (2006). The Work Design Questionnaire (WDQ): Developing and validating a comprehensive measure for assessing job design and the nature of work. *Journal of Applied Psychology, 91*(6), 1321–1339. https://doi.org/10.1037/00219010.91.6.1321
+**Citation**: Lawton, M. P. (1975). The Philadelphia Geriatric Center Morale Scale: A revision. *Journal of Gerontology, 30*, 85–89.https://doi.org/10.1093/geronj/30.1.85 
 
-#### German 
+#### German
 
-**Intro**: Bitte denken Sie bei der Beantwortung der folgenden Fragen an die letzten 3 Monate/ 4 Wochen. <br>
-**Text**: Meine Arbeit ermöglichte es mir, Initiative zu übernehmen. <br>
+**Intro**: In den letzten 3 Monaten habe ich bei der Arbeit gedacht, dass... <br>
+**Text**: ...die Dinge schlechter werden je älter ich werde. <br>
 **Scale**:  
 
-- 1 = trifft überhaupt nicht zu
-- 2 = trifft nicht zu
-- 3 = trifft wenig zu
-- 4 = trifft teilweise zu
-- 5 = trifft ziemlich zu
+- 1 = trifft überhaupt nicht zu 
+- 2 = trifft nicht zu 
+- 3 = trifft wenig zu 
+- 4 = trifft teilweise zu 
+- 5 = trifft ziemlich zu 
 - 6 = trifft zu
-- 7 = trifft voll und ganz zu
+- 7 = trifft voll und ganz zu 
 
-**Citation**: Stegmann, S., van Dick, R., Ullrich, J., Charalambous, J., Menzel, B., Egold, N., & Wu, T. T.-C. (2010). Der Work Design Questionnaire. *Zeitschrift Für Arbeits- Und Organisationspsychologie A&O, 54*, 1–28. https://doi.org/10.1026/0932-4089/a000002
+**Citation**: Self-translated
 
 #### Measured at 
 <div class ="flex-container">
@@ -145,45 +144,59 @@ for(i in 1:54) {
 
 </div><!-- flex-container -->
 
-
 </div><!--Second Column -->
 </div><!--"Row"-->
 
 
-## Example 2 - Turnover Intentions and Perceived Organizational Support {-}  
-<div class="row">
+## Example 2 - Three Timepoints {-}  
 
+<div class="row">
 <div class="column">
 <input
 type="text"
 placeholder="Search"
 />
 
-<ul style="border: 2px solid black">
+<div style="border: 2px solid black; padding: 0 20px; margin-bottom: 20px; list-style-position: outside;">
+<li>T1 (12/2019)</li>
+<ul>
 <li>Demographics</li>
 <li>Job Attitudes</li>
 <ul>
 <li>Job Engagement</li>
 <li>Job Satisfaction</li>
 <li>Turnover Intentions</li>
+<li>Retirement Intentions</li>
 <ul>
-<li style="background:AliceBlue;">turn1: I was planning to leave my job for another</li>
-<li>turn2: I often thought of quitting this job and finding another</li>
-<li>turn3: I would have liked to quit my job and find another</li>
+<li style="background:AliceBlue;">retire1: I expected to begin collecting a pension in the near future</li>
+<li>retire2: I was thinking about retiring in the near future</li>
+<li>retire3: I was planning to retire in the near future</li>
+<li>retire4: I was expecting to retire in the near futre</li>
 </ul>
 </ul>
-<li>Ageing and Work</li>
-<li>Work Design
+</ul>
+<li>T2 (03/2020)</li>
 <ul>
-<li>Job Demands</li>
-<li>Job Constraints</li>
-<li>Job Support</li>
-<li>Job Autonomy</li>
-<li>Perceived Organizational Support</li>
+<li>Demographics</li>
+<li>Job Attitudes</li>
 <ul>
-<li>pos1: The organization valued my contribution to its well-being</li>
-<li>pos2: The organization failed to appreciate any extra effort from me</li>
-<li>pos3: The organization would have ignored any complaint from me</li>
+<li>Job Engagement</li>
+<li>Job Satisfaction</li>
+<li>Turnover Intentions</li>
+<li>Retirement Intentions</li>
+</ul>
+</ul>
+</ul>
+<li>T3 (04/2020)</li>
+<ul>
+<li>Demographics</li>
+<li>Job Attitudes</li>
+<ul>
+<li>Job Engagement</li>
+<li>Job Satisfaction</li>
+<li>Turnover Intentions</li>
+<li>Retirement Intentions</li>
+<ul>
 </ul>
 </li>
 
@@ -191,25 +204,23 @@ placeholder="Search"
 </li>
 
 </ul>
+
+</div>
+
 
 
 #### Selection
 
-<div style="border: 2px solid black; padding-left: 5px;"> turn1 & pos1</div>  
+<div style="border: 2px solid black; padding-left: 5px;">retire1</div>  
 
 <div style="height: 20px;"></div>
 
 #### Measurement Points 
 
 <div style = "display: flex; gap: 20px;">
+<div><strong>T1</strong><br></div>
+<div><strong>T2</strong><br></div>
 <div><strong>T3</strong><br></div>
-<div><strong>T4</strong><br></div>
-<div><strong>T6</strong><br></div>
-<div><strong>T7</strong><br></div>
-<div><strong>T8</strong><br></div>
-<div><strong>T9</strong><br></div>
-<div><strong>T10</strong><br></div>
-<div><strong>T11</strong><br></div>
 </div>
 
 
@@ -229,7 +240,7 @@ N = number of participants, n = number of data points across measurement occasio
 library(ggplot2)
 
 set.seed(1234)
-TPs <- c("T3","T4", "T6","T7","T8","T9","T10","T11")
+TPs <- c("T1","T2", "T3")
 N = sample(800:1780, length(TPs), replace = TRUE)
 data = data.frame(TPs = factor(TPs, levels = TPs, ordered = TRUE), N)
 
@@ -238,8 +249,8 @@ ggplot(data, aes(TPs, N)) +
   geom_bar(stat = "identity", color = "#B02F2C", fill = "#B02F2C") + 
   labs(x = "Measurement Occasion", y = "Observations")
 ```
-<button>Download Data</button>
 
+<button>Download Data</button>
 
 </div><!--First Column -->
 
@@ -252,7 +263,7 @@ ggplot(data, aes(TPs, N)) +
 #### English
 
 **Intro**: In the last 3 months/4 weeks...<br>
-**Text**: ...I was planning to leave my job for another. <br>
+**Text**: ...I expected to begin collecting a pension in the near future. <br>
 **Scale**:  
 
 - 1 = strongly disagree 
@@ -268,7 +279,7 @@ ggplot(data, aes(TPs, N)) +
 #### German
 
 **Intro**: In den letzten 3 Monaten/4 Wochen...<br>
-**Text**: ...plante ich, meinen Job für einen anderen zu kündigen. <br>
+**Text**: ...rechnete ich damit, bald Rente zu erhalten. <br>
 **Scale**:  
 
 - 1 = trifft überhaupt nicht zu
